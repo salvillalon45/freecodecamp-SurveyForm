@@ -1,0 +1,87 @@
+/* -----------------------------------------
+  Body
+*/
+body {
+font-family: 'PT Mono', monospace;
+}
+
+
+
+/* -----------------------------------------
+  Header and Navigation Bar
+*/
+.bg-dark {
+    background-color: black!important;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.navbar-dark .navbar-nav .nav-link a{
+  color: white;
+}
+
+/* -----------------------------------------
+  Title
+*/
+.survey-title {
+  margin-top: 100px;
+}
+
+
+/* -----------------------------------------
+  Form Inputs
+*/
+
+
+form .info {
+  display: flex;
+  justify-content: center;
+}
+
+table,
+thead,
+tr,
+tbody,
+th,
+td {
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th {
+  border-top: none;
+}
+
+.table td {
+   /* text-align: center; */
+
+}
+
+
+
+
+
+
+/* -----------------------------------------
+  Footer
+*/
+footer {
+  margin-top: 100px;
+  padding-left: 25px;
+  background-color: black;
+  color: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.footer ul {
+  list-style-type: none;
+}
+
+.footer li {
+  display: inline;
+}
