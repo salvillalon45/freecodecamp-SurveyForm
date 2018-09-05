@@ -31,7 +31,7 @@ Salvador Villalon
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
     <link href= "./resources/css/index.css" type="text/css" rel="stylesheet">
-    <link href="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
 
   </head>
   <body>
@@ -61,7 +61,7 @@ Salvador Villalon
 
     <div class="survey-title text-center">
       <h1 id="title"> Pokemon Survey Form </h1>
-      <p> Let's learn more about your interest in Pokemon </p>
+      <p id="description"> Let's learn more about your interest in Pokemon </p>
     </div>
 
     <form id="survey-form">
@@ -71,16 +71,24 @@ Salvador Villalon
           <!-- Input Name -->
           <!-- ***************************************************** -->
           <tr>
-            <td><label for="name-label">* Name: </label></td>
+            <td for="name-label">
+              <label id="name-label">* Name</label>
+            </td>
+
             <td><input type="text" id="name" name="name" placeholder="Enter Your Name" required></td>
           </tr>
+
 
           <!-- Input Email -->
           <!-- ***************************************************** -->
           <tr>
-            <td><label for="email-label">* Email: </label></td>
+            <td for="email-label">
+              <label id="email-label">* Email</label>
+            </td>
+
             <td><input type="email" id="email" name="email" placeholder="Enter Your Email" required></td>
           </tr>
+
 
           <!-- Do You Like Pokemon Radio Buttons -->
           <!-- ***************************************************** -->
@@ -88,11 +96,11 @@ Salvador Villalon
             <td>Do You <br>Like Pokemon?</td>
             <td>
               <label for="yes">
-                <input id="yes" type="radio" name="like-pokemon"> Yes
+                <input id="yes" type="radio" name="like-pokemon" value="1"> Yes
               </label>
 
               <label for="no">
-                <input id="no" type="radio" name="like-pokemon"> No
+                <input id="no" type="radio" name="like-pokemon" value="2"> No
               </label>
             </td>
           </tr>
@@ -113,7 +121,10 @@ Salvador Villalon
           </tr>
 
           <tr>
-            <td><label for="rating"> * How Good is this form? </label></td>
+            <td for="number-label">
+              <label id="number-label">* How Good is this form?</label>
+            </td>
+
             <td><input type="number" id="number" name="rating" min="1" max="5"  rows="5" cols="40" placeholder="Give a rating from 1 through 5"></td>
           </tr>
 
@@ -257,7 +268,7 @@ Salvador Villalon
       <!-- Submit Button -->
       <!-- ***************************************************** -->
       <div class="info submit-btn">
-        <input type="button" class="btn btn-default" value="Submit">
+        <input id="submit" type="submit" class="btn btn-default" value="submit">
       </div>
 
     </form>
@@ -281,6 +292,7 @@ Salvador Villalon
      </ul>
    </footer>
 
+   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
